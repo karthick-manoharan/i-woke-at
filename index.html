@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>i woke at</title>
+		<link href="https://fonts.googleapis.com/css?family=Scope+One" rel="stylesheet">
+		<style>
+			body{
+				background:#EAE9E7;
+				box-sizing: border-box;
+				font-family: 'Scope One','serif';
+				/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f2f0ef+0,f3efec+53,e2e2e2+100 */
+				background: #f2f0ef; /* Old browsers */
+				background: -moz-radial-gradient(center, ellipse cover,  #f2f0ef 0%, #f3efec 53%, #e2e2e2 100%); /* FF3.6-15 */
+				background: -webkit-radial-gradient(center, ellipse cover,  #f2f0ef 0%,#f3efec 53%,#e2e2e2 100%); /* Chrome10-25,Safari5.1-6 */
+				background: radial-gradient(ellipse at center,  #f2f0ef 0%,#f3efec 53%,#e2e2e2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f0ef', endColorstr='#e2e2e2',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+			}
+			ul{
+				list-style: none;
+			}
+			.calendar{
+				width:1000px;
+				height:700px;
+				margin:100px auto;
+				box-shadow: 1px 1px 1px 2px #EBE7E4;
+			}
+			#today{
+				width:400px;
+				height: 700px;
+				background: #F58788;
+				display: inline-block;
+				color:#fff;
+				text-transform: uppercase;
+				float:left;
+			}
+			#today #weekday{
+				margin: 250px 0 0 50px;
+				font-size: 33px;
+			}
+			#today #time{
+				margin-left: 50px;
+				color: gold;
+				font-size: 16px;
+			}
+			#today sup{
+				font-size: 10px;
+			}
+			#month{
+				width: 600px;
+				height: 700px;
+				background: #F9F7F8;
+				float: right;
+			}
+			#monthName{
+				text-transform: uppercase;
+				color:#BDBFBF;
+				margin:190px 0 0;
+			}
+			#monthName li{
+				display: inline-block;
+				font-size: 14px;
+				color: #A2A2A3;
+				font-weight: bolder;
+			}
+			#monthName li+li:before{
+				content: '';
+				padding-left:12px;
+			}
+			#dates li{
+				width: 20px;
+			    height: 20px;
+			    margin: 26px;
+			}
+			#year{
+				float: right;
+				font-size: 38px;
+				margin: 55px;
+				color:#A2A2A3;
+			}
+			#dates{
+				display: flex;
+				color: #7C7E7C;
+			}
+			#month #dates{
+				flex-flow: row wrap;
+				align-items: center;
+				text-align: center;
+			}
+			.active{
+				background: #F58788;
+				border-radius: 12px;
+				color: #fff;
+			}
+			.credits{
+				font-size:10px;
+				color:#ccc;
+			}
+			.credits a:link,a:visited,a:hover,a:active{
+				color:#ccc;
+				text-decoration: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="calendar">
+			<section id="today">
+				<p id="weekday">1<sup>st</sup> July - Friday</p>
+				<p id="time">7:30 AM</p>
+			</section>
+			<section id="month">
+				<p id="year">2016</p>
+				<ul id="monthName">
+					<li>jan</li>
+					<li>feb</li>
+					<li>mar</li>
+					<li>april</li>
+					<li>may</li>
+					<li>jun</li>
+					<li>july</li>
+					<li>aug</li>
+					<li>sep</li>
+					<li>oct</li>
+					<li>nov</li>
+					<li>dec</li>
+				</ul>
+				<ul id="dates">
+					<li class="active">1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>4</li>
+					<li>5</li>
+					<li>6</li>
+					<li>7</li>
+					<li>8</li>
+					<li>9</li>
+					<li>10</li>
+					<li>11</li>
+					<li>12</li>
+					<li>13</li>
+					<li>14</li>
+					<li>15</li>
+					<li>16</li>
+					<li>17</li>
+					<li>18</li>
+					<li>19</li>
+					<li>20</li>
+					<li>21</li>
+					<li>22</li>
+					<li>23</li>
+					<li>24</li>
+					<li>25</li>
+					<li>26</li>
+					<li>27</li>
+					<li>28</li>
+					<li>29</li>
+					<li>30</li>
+					<li>31</li>
+				</ul>
+
+			</section>
+			<p class="credits"><a href="https://dribbble.com/reimertz" target="_blank">ui credits</a></p>
+		</div>
+	</body>
+</html>
